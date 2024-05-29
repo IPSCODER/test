@@ -2,32 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* ::-webkit-datetime-edit
+::-webkit-datetime-edit-fields-wrapper
+::-webkit-datetime-edit-text
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+::-webkit-datetime-edit-year-field
+::-webkit-datetime-edit-month-field
+::-webkit-datetime-edit-week-field
+::-webkit-datetime-edit-day-field
+::-webkit-datetime-edit-hour-field
+::-webkit-datetime-edit-minute-field
+::-webkit-datetime-edit-second-field
+::-webkit-datetime-edit-millisecond-field
+::-webkit-datetime-edit-ampm-field
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+::-webkit-inner-spin-button
+::-webkit-calendar-picker-indicator */
