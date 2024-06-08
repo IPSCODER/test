@@ -35,7 +35,7 @@
     ".next/types/**/*.ts",
     "src/app/abc/Page.jsx",
     "src/app/abc/const.js",
-    "src/app/maker/page.tsx"
+    "src/app/maker/page.jsx"
   ],
   "exclude": [
     "node_modules"

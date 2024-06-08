@@ -94,7 +94,7 @@ import {
       }
     
       // re-hydrate canvas state
-      // initialElements = JSON.parse(localStorage.getItem('initialElements'))
+      initialElements = JSON.parse(localStorage.getItem('initialElements'))
     
       // define all palette elements that you want to show
       paletteItemsToBeRendered = [{
@@ -195,7 +195,7 @@ import {
           <TabPane tabId="1">
             <Row className="page-builder mt-3">
               <Col sm="9" className="canvas-container">
-                <Canvas onDrop={this._onDrop}  placeholder="Drop Here" />
+                <Canvas onDrop={this._onDrop} initialElements={this.initialElements} placeholder="Drop Here" />
               </Col>
               <Col sm="3">
                 <Palette paletteElements={this.paletteItemsToBeRendered} />
