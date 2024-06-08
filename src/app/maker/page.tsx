@@ -27,7 +27,8 @@ import {
   
   import './maker.css';
 
-export class page extends Component {
+ class page extends Component {
+  
 
     constructor(props) {
         super(props);
@@ -78,17 +79,11 @@ export class page extends Component {
         state.addEventListener('change', this._stateChange);
       }
 
-      componentWillUnmount(){
-
-      }
-    
       componentWillUnmount() {
         state.removeEventListener('change', this._stateChange);
       }
 
-      componentWillUnmount(){
-        
-      }
+
     
       _stateChange = (s) => {
         const newState = state.getStorableState();
@@ -99,7 +94,7 @@ export class page extends Component {
       }
     
       // re-hydrate canvas state
-      initialElements = JSON.parse(localStorage.getItem('initialElements'))
+      // initialElements = JSON.parse(localStorage.getItem('initialElements'))
     
       // define all palette elements that you want to show
       paletteItemsToBeRendered = [{
@@ -200,7 +195,7 @@ export class page extends Component {
           <TabPane tabId="1">
             <Row className="page-builder mt-3">
               <Col sm="9" className="canvas-container">
-                <Canvas onDrop={this._onDrop} initialElements={this.initialElements} placeholder="Drop Here" />
+                <Canvas onDrop={this._onDrop}  placeholder="Drop Here" />
               </Col>
               <Col sm="3">
                 <Palette paletteElements={this.paletteItemsToBeRendered} />

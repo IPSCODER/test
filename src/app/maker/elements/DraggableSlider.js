@@ -108,7 +108,7 @@ class DraggableSlider extends React.Component {
               this.state.slides
                 .map((src, i) => (
                   <Slide key={i} index={i}>
-                    <Image style={{'width': '100%'}} src={src} alt='alt' />
+                    <Image style={{'width': '100%'}} width={100} height={100} src={src} alt='alt' />
                   </Slide>
                 ))
             }
